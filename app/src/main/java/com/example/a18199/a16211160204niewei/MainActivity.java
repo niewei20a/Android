@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     lv.setAdapter(adapter);
                 }else {
                     processView.setVisibility(View.GONE);
+                    lv.requestLayout();
                     adapter.notifyDataSetChanged();
                     processView.setVisibility(View.VISIBLE);
                     if(Max_Data_Num >= 2)
