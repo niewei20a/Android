@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.AppTheme);
         setContentView(R.layout.layout);
         lv = (ListView) findViewById(R.id.ListView);
         bt = (Button) findViewById(R.id.button);
@@ -55,8 +56,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String url = "http://jwc.wzu.edu.cn/index/wjtz.htm";
-                NewsThread newsThread = new NewsThread(handler,url);
-                newsThread.start();
+                if(list_data.size() == 0){
+                    NewsThread newsThread = new NewsThread(handler,url);
+                    newsThread.start();
+                }
             }
         });
        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
