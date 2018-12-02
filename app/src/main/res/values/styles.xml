@@ -1,5 +1,4 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -24,6 +23,6 @@
         <item name="windowActionBar">false</item>//取消Actionbar
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>//设置全屏
-        <item name="android:windowBackground">@drawable/huaji</item>//设置背景
+        <item name="android:windowBackground">@drawable/huajione</item>//设置背景
     </style>
 </resources>

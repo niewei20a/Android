@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         processView = LayoutInflater.from(this).inflate(R.layout.foot_layout, null, false);
         lv.addFooterView(processView);
 
-
-
         final Handler handler = new Handler(new Handler.Callback() {
             @Override
             public boolean handleMessage(Message msg) {
