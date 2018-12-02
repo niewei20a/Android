@@ -7,14 +7,23 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="AppTheme.Launcher">
+        <!--关闭启动窗口-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/huaji</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Full" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
     <style name="AppTheme.NoActionBarWithBackGround">
         <item name="windowActionBar">false</item>//取消Actionbar
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>//设置全屏
-    </style>
-    <style name="AppTheme.Launcher">
-        <!--关闭启动窗口-->
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowBackground">@drawable/android</item>
+        <item name="android:windowBackground">@drawable/huaji</item>//设置背景
     </style>
 </resources>

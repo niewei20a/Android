@@ -43,7 +43,7 @@ public class NormalAdapter extends RecyclerView.Adapter<NormalAdapter.VH>{
     @Override
     public VH onCreateViewHolder(ViewGroup parent, int viewType) {
         //LayoutInflater.from指定写法
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_layout, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_layout,null,false);
         return new VH(v);
     }
 }

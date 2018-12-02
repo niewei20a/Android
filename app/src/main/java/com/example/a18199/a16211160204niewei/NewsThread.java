@@ -40,7 +40,7 @@ public class NewsThread extends Thread {
                     String time=els.get(i).getElementsByAttributeValue("class","newslistatime").text();
                     News news=new News(title,time,address1);
                     newsArrayList.add(news);
-                    Log.d("TAG", "run: "+news.toString());
+                    //Log.d("TAG", "run: "+news.toString());
                 }
             }catch (Exception e){
             }
