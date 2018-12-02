@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AbsListView;
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.AppTheme);
         setContentView(R.layout.layout);
         lv = (ListView) findViewById(R.id.ListView);
+//        RecyclerView rv = (RecyclerView) findViewById(R.id.recycler_view_test_rv);
+////        rv.setLayoutManager(new LinearLayoutManager(this));
         bt = (Button) findViewById(R.id.button);
         processView = LayoutInflater.from(this).inflate(R.layout.foot_layout,null,false);
         lv.addFooterView(processView);

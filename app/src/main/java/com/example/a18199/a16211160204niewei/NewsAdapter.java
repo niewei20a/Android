@@ -43,7 +43,6 @@ public class NewsAdapter extends ArrayAdapter {
         viewHolder.textView2.setText(" "+newsList.get(position).getDate());
         return  convertView;
     }
-
     public static class ViewHolder {
         public TextView textView1;
         public TextView textView2;
